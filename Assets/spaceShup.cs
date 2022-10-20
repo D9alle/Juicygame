@@ -62,11 +62,11 @@ public class spaceShup : MonoBehaviour
                 }
                 if (transform.position.x > max)
                 {
-                    transform.position = new Vector3(-max, 0, 0);
+                    transform.position = new Vector3(-max, transform.position.y, 0);
                 }
                 if (transform.position.x < -max)
                 {
-                    transform.position = new Vector3(max, 0, 0);
+                    transform.position = new Vector3(max, transform.position.y, 0);
                 }
                 timer += Time.deltaTime;
                 break;
