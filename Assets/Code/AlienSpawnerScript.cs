@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Olle
 public class AlienSpawnerScript : MonoBehaviour
 {
 
@@ -23,6 +25,8 @@ public class AlienSpawnerScript : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+
+        //Spawnar en alien var efter fem sekunder
         if (timer > time)
         {
             Instantiate(alien, new Vector3(Random.Range(minSpawn, maxSpawn), transform.position.y, 0), Quaternion.identity);

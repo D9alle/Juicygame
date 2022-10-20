@@ -287,7 +287,7 @@ MonoBehaviour:
   ScoreText: {fileID: 915920500}
   typ: 0
   prefabs:
-  - {fileID: 1412935631395823060, guid: c06afc54502e99346a1066bbe80cc553, type: 3}
+  - {fileID: 8592590028801540861, guid: 45c4293643d0e834eabad158d25c7e26, type: 3}
   - {fileID: 1264981537913649701, guid: 7b79e28a13c2c994abd03146b2634a48, type: 3}
   - {fileID: 8290028675732975335, guid: f33c91ce2b51a324f8aa142e3e58ba8e, type: 3}
   punkteer:
