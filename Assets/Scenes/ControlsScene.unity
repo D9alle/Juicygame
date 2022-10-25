@@ -562,7 +562,7 @@ MonoBehaviour:
     Shoot
     - Spacebar
 
-    Swich weapon - E'
+    Switch weapon - E'
 --- !u!222 &1357389911
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -12,10 +12,10 @@ public class BackButtonScript : MonoBehaviour
 
     private void Update()
     {
-        BackButton.onClick.AddListener(LoadGameScene); //om man klicker på knappen gör den det ssom står på LoadGameScene()
+        BackButton.onClick.AddListener(LoadMainMenuScene); //om man klicker på knappen gör den det ssom står på LoadMainMenuScene()
     }
-    void LoadGameScene()
+    void LoadMainMenuScene()
     {
-        SceneManager.LoadScene(1); //laddar scene 1
+        SceneManager.LoadScene(0); //laddar scene 0
     }
 }
