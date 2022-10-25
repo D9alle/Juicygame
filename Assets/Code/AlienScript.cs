@@ -29,5 +29,13 @@ public class AlienScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if (collision.gameObject.tag == "Bomb")
+        {
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag == "Player")
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
