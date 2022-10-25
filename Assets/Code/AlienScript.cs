@@ -14,5 +14,20 @@ public class AlienScript : MonoBehaviour
     {
         //flytar ner ner alien
         transform.position += new Vector3(0, -speed * Time.deltaTime, 0);
+
+        //när alien är tillräckligt långt ner så försvinner den
+        if (transform.position.y < -6)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //när alien nuddar skott så försvinner den
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Destroy(gameObject);
+        }
     }
 }

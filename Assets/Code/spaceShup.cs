@@ -26,7 +26,7 @@ public class spaceShup : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             vapen++;
-            if (vapen > 2)
+            if (vapen > 1)
             {
                 vapen = 0;
             }
@@ -40,7 +40,7 @@ public class spaceShup : MonoBehaviour
                     print("bang");
                     Instantiate(prefabs[0], transform.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(0, 500, 0);
                 }
-                if (Input.GetKeyUp(KeyCode.Space) && vapen == 2)
+                if (Input.GetKeyUp(KeyCode.Space) && vapen == 1)
                 {
                     print("bang");
                     Instantiate(prefabs[1], transform.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(0, 500, 0);
