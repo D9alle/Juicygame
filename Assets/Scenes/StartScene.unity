@@ -320,10 +320,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 254380683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41d7f8bef031d4847b7dcc3356ee2327, type: 3}
+  m_Script: {fileID: 11500000, guid: 9227df15ea0f02e40983c706bfea35e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startButton: {fileID: 0}
   controlsButton: {fileID: 254380685}
 --- !u!1 &471756172
 GameObject:
@@ -975,4 +974,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 2066205436}
-  controlsButton: {fileID: 0}
