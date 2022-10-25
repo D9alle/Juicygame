@@ -5,14 +5,14 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 //Theo
-public class StartButtonScript : MonoBehaviour
+public class BackButtonScript : MonoBehaviour
 {
     [SerializeField]
-    Button startButton;
+    Button BackButton;
 
     private void Update()
     {
-        startButton.onClick.AddListener(LoadGameScene); //om man klicker på knappen gör den det ssom står på LoadGameScene()
+        BackButton.onClick.AddListener(LoadGameScene); //om man klicker på knappen gör den det ssom står på LoadGameScene()
     }
     void LoadGameScene()
     {
