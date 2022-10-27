@@ -74,14 +74,6 @@ public class spaceShup : MonoBehaviour
                 break;
             case Typ.Skott:
                 break;
-            case Typ.Bomb:
-                timer += Time.deltaTime;
-                if (timer > 3)
-                {
-                    GetComponent<SphereCollider>().radius = 4;
-                    Destroy(gameObject, 1);
-                }
-                break;
             default:
                 break;
         }
