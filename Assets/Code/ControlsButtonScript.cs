@@ -10,7 +10,7 @@ public class ControlsButtonScript : MonoBehaviour
     [SerializeField]
     Button controlsButton;
 
-    private void Update()
+    private void Start()
     {
         controlsButton.onClick.AddListener(LoadControlsScene); //om man klicker på knappen gör den det ssom står på LoadControlsScene()
     }
