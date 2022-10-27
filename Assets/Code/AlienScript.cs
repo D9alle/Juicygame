@@ -35,6 +35,7 @@ public class AlienScript : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player")
         {
+            CameraShake.shakeTime = 1;
             Destroy(collision.gameObject);
         }
     }
