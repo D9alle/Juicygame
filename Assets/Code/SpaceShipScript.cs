@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //Olle
 public class SpaceShipScript : MonoBehaviour
@@ -16,6 +17,10 @@ public class SpaceShipScript : MonoBehaviour
     [SerializeField]
     public GameObject[] prefabs;
 
+    public int score;
+
+    public Text ScoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +30,9 @@ public class SpaceShipScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        ScoreText.text = "Score: " + score;
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             vapen++;

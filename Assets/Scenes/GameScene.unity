@@ -349,6 +349,8 @@ MonoBehaviour:
   prefabs:
   - {fileID: 8592590028801540861, guid: 45c4293643d0e834eabad158d25c7e26, type: 3}
   - {fileID: 1264981537913649701, guid: 7b79e28a13c2c994abd03146b2634a48, type: 3}
+  score: 0
+  ScoreText: {fileID: 915920500}
 --- !u!1 &498453497
 GameObject:
   m_ObjectHideFlags: 0
