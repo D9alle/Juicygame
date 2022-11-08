@@ -10,7 +10,7 @@ public class BackButtonScript : MonoBehaviour
     [SerializeField]
     Button BackButton;
 
-    private void Update()
+    private void Start()
     {
         BackButton.onClick.AddListener(LoadMainMenuScene); //om man klicker på knappen gör den det ssom står på LoadMainMenuScene()
     }

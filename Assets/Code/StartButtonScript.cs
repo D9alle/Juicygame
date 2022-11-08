@@ -10,7 +10,7 @@ public class StartButtonScript : MonoBehaviour
     [SerializeField]
     Button startButton;
 
-    private void Update()
+    private void Start()
     {
         startButton.onClick.AddListener(LoadGameScene); //om man klicker på knappen gör den det ssom står på LoadGameScene()
     }

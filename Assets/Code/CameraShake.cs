@@ -8,7 +8,7 @@ public class CameraShake : MonoBehaviour
     public Vector2 frequency;
     Vector2 time = Vector2.zero;
     static bool shouldShake;
-    static float shakeTime;
+    public static float shakeTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +18,15 @@ public class CameraShake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            shakeTime = 10;
+        }
         Vector3 shakePos = transform.localPosition;
         if (shakeTime > 0)
         {
             shouldShake = true;
-            shakeTime = -Time.deltaTime;
+            shakeTime -= Time.deltaTime;
         }
         else
         {
@@ -30,6 +34,7 @@ public class CameraShake : MonoBehaviour
         }
         if (shouldShake == true)
         {
+            time.x += frequency.x * Time.deltaTime;
             shakePos.x = Mathf.Sin(time.x) * amplitude.x;
         }
         transform.localPosition = shakePos;

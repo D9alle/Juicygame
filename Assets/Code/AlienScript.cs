@@ -8,6 +8,7 @@ public class AlienScript : MonoBehaviour
 {
     [SerializeField]
     float speed = 5;
+    public GameObject deathEffect; // gör GameObjekt vid namn deathEffect av alvin
 
     // Update is called once per frame
     void Update()
@@ -35,7 +36,10 @@ public class AlienScript : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player")
         {
+            CameraShake.shakeTime = 1;
             Destroy(collision.gameObject);
         }
+
+        Instantiate(deathEffect, transform.position, Quaternion.identity); // denna gör så vi kan ha death effect av alvin
     }
 }
