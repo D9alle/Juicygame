@@ -12,7 +12,7 @@ public class ControlsButtonScript : MonoBehaviour
 
     private void Start()
     {
-        controlsButton.onClick.AddListener(LoadControlsScene); //om man klicker på knappen gör den det ssom står på LoadControlsScene()
+        controlsButton.onClick.AddListener(LoadControlsScene); //om man klickar på knappen gör den det ssom står på LoadControlsScene()
     }
     void LoadControlsScene()
     {

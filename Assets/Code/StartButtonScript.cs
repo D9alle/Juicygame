@@ -12,7 +12,7 @@ public class StartButtonScript : MonoBehaviour
 
     private void Start()
     {
-        startButton.onClick.AddListener(LoadGameScene); //om man klicker på knappen gör den det ssom står på LoadGameScene()
+        startButton.onClick.AddListener(LoadGameScene); //om man klickar på knappen gör den det ssom står på LoadGameScene()
     }
     void LoadGameScene()
     {
