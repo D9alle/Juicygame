@@ -50,7 +50,7 @@ public class rythm : MonoBehaviour
 
         SongPosition = (float)(AudioSettings.dspTime - DspSongTime);
 
-        SongPosition = (float)(AudioSettings.dspTime - DspSongTime - FirstBeatOffSet);
+        SongPosition = (float)(AudioSettings.dspTime - DspSongTime - FirstBeatOffSet);  
 
     }
 }
