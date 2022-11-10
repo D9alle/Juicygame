@@ -20,7 +20,7 @@ public class CameraShake : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            shakeTime = 10;
+            shakeTime = 0.25f;
         }
         Vector3 shakePos = transform.localPosition;
         if (shakeTime > 0)
