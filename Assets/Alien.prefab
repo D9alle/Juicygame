@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  deathEffect: {fileID: 140400, guid: f66e014454bdeb942944471c5e19da6c, type: 3}
 --- !u!58 &2988007269740246744
 CircleCollider2D:
   m_ObjectHideFlags: 0
