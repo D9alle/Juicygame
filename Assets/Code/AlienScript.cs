@@ -6,9 +6,17 @@ using UnityEngine;
 //Olle
 public class AlienScript : MonoBehaviour
 {
+
+    SpaceShipScript spaceShip;
+
     [SerializeField]
     float speed = 5;
     public GameObject deathEffect; // gör GameObjekt vid namn deathEffect av alvin
+
+    void Start()
+    {
+        spaceShip = FindObjectOfType<SpaceShipScript>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,12 +34,9 @@ public class AlienScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //när alien nuddar skott så försvinner den
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Bomb")
         {
-            Destroy(gameObject);
-        }
-        else if (collision.gameObject.tag == "Bomb")
-        {
+            spaceShip.score++;
             Destroy(gameObject);
         }
         else if (collision.gameObject.tag == "Player")
