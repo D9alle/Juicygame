@@ -350,7 +350,7 @@ MonoBehaviour:
   - {fileID: 8592590028801540861, guid: 45c4293643d0e834eabad158d25c7e26, type: 3}
   - {fileID: 1264981537913649701, guid: 7b79e28a13c2c994abd03146b2634a48, type: 3}
   score: 0
-  ScoreText: {fileID: 915920500}
+  ScoreText: {fileID: 0}
 --- !u!1 &498453497
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66ed8269b7d5b548b59d24d93eb2911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: {x: 0.2, y: 0.2}
+  amplitude: {x: 0.5, y: 0.65}
   frequency: {x: 50, y: 50}
 --- !u!1 &1002477147
 GameObject:
@@ -824,6 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1431945897}
   - component: {fileID: 1431945896}
+  - component: {fileID: 1431945898}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -941,6 +942,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1431945898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431945895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578a61854941ac41ac9c77a39043aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SongBpm: 128
+  SecPerBeat: 0
+  beatsPerLoop: 10
+  completedLoops: 0
+  loopPositionInBeats: 0
+  SongPosition: 0
+  loopPositionInAnalog: 0
+  SongPositionInBeats: 0
+  DspSongTime: 0
+  FirstBeatOffSet: 0
+  MusicSource: {fileID: 0}
 --- !u!1 &2059446631
 GameObject:
   m_ObjectHideFlags: 0
