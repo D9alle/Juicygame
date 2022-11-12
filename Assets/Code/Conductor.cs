@@ -11,26 +11,25 @@ public class Conductor : MonoBehaviour
     //mängden av sekunder för varje låt.
     public float SecPerBeat;
 
+    //mängden av beats per loop
     public float beatsPerLoop;
 
+    //loops som faktiskt loopa.
     public int completedLoops = 0;
-
+        
     public float loopPositionInBeats;
 
     //Var vi ligger i låten i sekunder.
     public float SongPosition;
 
+    //variabel som ska användas för att mäta positionen av loopen.
     public float loopPositionInAnalog;
-
-    public static Conductor instance;
 
     //Var låten ligger i beats.
     public float SongPositionInBeats;
 
     //Hur många sekunder det har gått sen låten började.
     public float DspSongTime;
-
-    public float FirstBeatOffSet;
 
     //en audiosource kopplad till den här gameobject som kommer spela musik.
     public AudioSource MusicSource;
@@ -40,11 +39,6 @@ public class Conductor : MonoBehaviour
         if (SongPositionInBeats >= (completedLoops + 1) * beatsPerLoop)
             completedLoops++;
         loopPositionInBeats = SongPositionInBeats - completedLoops * beatsPerLoop;
-    }
-
-    void Awake()
-    {
-        instance = this;
     }
 
     void Start()
@@ -65,17 +59,14 @@ public class Conductor : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {  //hur många sekunder det har gått sen låten började,
         SongPosition = (float)(AudioSettings.dspTime - DspSongTime);
 
+        //hur många beats sen låten började.
         SongPositionInBeats = SongPosition / SecPerBeat;
 
-        SongPosition = (float)(AudioSettings.dspTime - DspSongTime);
-
-        SongPosition = (float)(AudioSettings.dspTime - DspSongTime - FirstBeatOffSet); 
-        
+        //mäter positionen av loopen.
         loopPositionInAnalog = loopPositionInBeats / beatsPerLoop;
-
-        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, Mathf.Lerp(0, 360, Conductor.instance.loopPositionInAnalog));
     }
 }
+//Efe
