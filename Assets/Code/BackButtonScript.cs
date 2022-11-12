@@ -12,7 +12,7 @@ public class BackButtonScript : MonoBehaviour
 
     private void Start()
     {
-        BackButton.onClick.AddListener(LoadMainMenuScene); //om man klicker på knappen gör den det ssom står på LoadMainMenuScene()
+        BackButton.onClick.AddListener(LoadMainMenuScene); //om man klickar på knappen gör den det ssom står på LoadMainMenuScene()
     }
     void LoadMainMenuScene()
     {

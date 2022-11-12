@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 //Olle
@@ -43,6 +44,7 @@ public class AlienScript : MonoBehaviour
         {
             CameraShake.shakeTime = 1;
             Destroy(collision.gameObject);
+            SceneManager.LoadScene(3); //Theo - laddar scene 3
         }
 
         Instantiate(deathEffect, transform.position, Quaternion.identity); // denna gör så vi kan ha death effect av alvin

@@ -18,15 +18,15 @@ public class CameraShake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //när man trycker ner space
         {
             shakeTime = 0.25f;
         }
-        Vector3 shakePos = transform.localPosition;
+        Vector3 shakePos = transform.localPosition;     //shakePos är den lokala positionen
         if (shakeTime > 0)
         {
             shouldShake = true;
-            shakeTime -= Time.deltaTime;
+            shakeTime -= Time.deltaTime;    //skak tiden blir mindre medans shaketime är mer än 0
         }
         else
         {
@@ -34,8 +34,8 @@ public class CameraShake : MonoBehaviour
         }
         if (shouldShake == true)
         {
-            time.x += frequency.x * Time.deltaTime;
-            shakePos.x = Mathf.Sin(time.x) * amplitude.x;
+            time.x += frequency.x * Time.deltaTime;     //destå mer tid som går destå högre time.x blir det
+            shakePos.x = Mathf.Sin(time.x) * amplitude.x;   //skakar med hjälp av sinus kurvan skapad med time.x
         }
         transform.localPosition = shakePos;
     }
