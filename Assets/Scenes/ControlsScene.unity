@@ -705,7 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c89496bea861b74190b96be42e78ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackButton: {fileID: 1607265948}
+  toStartScene: {fileID: 1607265948}
 --- !u!1 &1897895967
 GameObject:
   m_ObjectHideFlags: 0
