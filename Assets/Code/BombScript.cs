@@ -11,7 +11,7 @@ public class BombScript : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 3)
+        if (timer >= 3)
         {
             Destroy(gameObject);
         }
